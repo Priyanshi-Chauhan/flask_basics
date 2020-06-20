@@ -6,8 +6,17 @@
 
 yayayyay
 
-<% for i in my_friends %>
-{{i}}
-<% endfor %>
+{% if number > 10 %}
+{{number}}
+{% else %}
+<p> {{number }} is smaller than 10</p> 
+{% endif %}
+
+
+{% for i in my_friends %}
+<h1>{{i}}</h1>
+{% endfor %}
+
+
 </body>
         </html>
